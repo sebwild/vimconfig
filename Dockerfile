@@ -10,7 +10,7 @@ MAINTAINER sebastianwilde@live.de
 # Redirect from .vimrc to .vim/vimrc
 RUN sudo apt-get update 
     && apt-get install -y git vim nodejs-legacy npm build-essential cmake python-dev \
-    && sudo npm install -g npm typescript jshint \
+    && npm install -g npm typescript jshint \
     && git config --global user.email sebastianwilde@live.de \
     && git config --global user.name sebwild \
     && mkdir /root/.vim \
