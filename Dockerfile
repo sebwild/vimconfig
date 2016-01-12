@@ -17,9 +17,12 @@ RUN sudo apt-get update \
     && curl --url https://bootstrap.pypa.io/get-pip.py >> /root/get-pip.py \
     && python /root/get-pip.py \
     && rm /root/get-pip.py \
-    && npm install -g npm typescript jshint \
+    && npm install -g npm typescript jshint grunt grunt-cli node-sass browserify \
     && mkdir /root/.vim \
     && git clone --recursive https://github.com/sebwild/vimconfig.git /root/.vim \
     && python /root/.vim/bundle/YouCompleteMe/install.py --tern-completer \
     && echo 'runtime vimrc' > /root/.vimrc
+
+USER dev
+WORKDIR /home/project
 
