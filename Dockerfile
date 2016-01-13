@@ -23,6 +23,5 @@ RUN sudo apt-get update \
     && python /root/.vim/bundle/YouCompleteMe/install.py --tern-completer \
     && echo 'runtime vimrc' > /root/.vimrc
 
-USER dev
 WORKDIR /home/project
 
