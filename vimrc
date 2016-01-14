@@ -90,6 +90,9 @@ imap <C-c> <CR><Esc>O
 " Remap esc to jk
 inoremap jk <esc>
 
+" Remap oo to add a new line below cursor
+nnoremap oo o<Esc>
+
 " Arrows are unvimlike 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
