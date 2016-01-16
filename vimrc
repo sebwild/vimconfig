@@ -85,10 +85,13 @@ set clipboard=unnamedplus
 nnoremap <space> za
 
 " Map key to split current line
-imap <C-c> <CR><Esc>O
+inoremap <C-o> <CR><Esc>ko
+
+" Move cursor after end of line with insert mode
+inoremap fd <Esc>$a
 
 " Remap esc to jk
-inoremap jk <esc>
+inoremap jk <Esc>
 
 " Remap oo to add a new line below cursor
 nnoremap oo o<Esc>
