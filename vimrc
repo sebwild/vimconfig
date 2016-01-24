@@ -94,7 +94,7 @@ inoremap fd <Esc>$a
 inoremap jk <Esc>
 
 " Remap oo to add a new line below cursor
-nnoremap oo o<Esc>
+nnoremap OO o<Esc>
 
 " Arrows are unvimlike 
 nnoremap <up> <nop>
