@@ -41,8 +41,9 @@ Plugin 'scrooloose/nerdtree'
 " Git ingration
 Plugin 'tpope/vim-fugitive'
 
-" Powerline
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" VIM airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Javascript syntax highlighting
 Plugin 'jelera/vim-javascript-syntax'
@@ -72,8 +73,9 @@ nnoremap <C-H> <C-W><C-H>
 " nnoremap $ W
 
 " Colors
-set t_Co=256
 colorscheme zenburn
+set t_Co=256
+set background=light
 
 " Enable line numbering
 set nu
@@ -149,7 +151,8 @@ syntax on
 " Let Nerdtree ignore certain files
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
-" Powerline always visible
+" vim airline theme and always visible
+let g:airline_theme = 'light'
 set laststatus=2
 
 " NERDTree Key binding
